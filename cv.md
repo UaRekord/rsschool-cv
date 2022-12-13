@@ -23,6 +23,8 @@ function createPhoneNumber(numbers){
 1. [FreeCodeCamp Responsive Web Design] (https://freecodecamp.org/ukrainian/certification/uarekord/responsive-web-design)
 2. [Основи Web UI розробки 2022] (https://courses.prometheus.org.ua:18090/cert/bb406c395e884564846468c2c7eab08c)
 3. [Front-end розробка] (https://courses.prometheus.org.ua:18090/cert/e8c7b1e14fa347e18f3f325b3681f4ec)
+4. [codewars profile] (https://www.codewars.com/users/UaRekord) 
+5. [Github profile] (https://github.com/UaRekord) 
 
 ## Language:
 * English level - A2
