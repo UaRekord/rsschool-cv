@@ -5,9 +5,8 @@
 * Tel: +380972242061
 
 ## About myself
-I want to learn JS and React in RS School.
-After education i would work in Berlin.
-=====
+I want to learn JS and React in RS School. After education i would work in Berlin.
+
 ## Code example 
 ```
 function createPhoneNumber(numbers){
@@ -18,7 +17,7 @@ function createPhoneNumber(numbers){
 }
 ```
 ## Work Experience
-landing page for apoteke
+[landing page for apoteke] (https://uarekord.github.io/aptekimelit/)
 
 ## Education and courses:
 1. [FreeCodeCamp Responsive Web Design] (https://freecodecamp.org/ukrainian/certification/uarekord/responsive-web-design)
