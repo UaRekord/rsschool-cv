@@ -1,2 +1,2 @@
 # rsschool-cv
-first
+https://github.com/UaRekord/rsschool-cv/blob/gh-pages/cv.md
