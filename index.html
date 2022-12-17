@@ -4,9 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Curriculum Vitae</title>
+    <link href="/css/fontello.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <nav>
+            <ul>
+                <li class="nav-item">About me</li>
+                <li class="nav-item">Contacts</li>
+                <li class="nav-item">Experience</li>
+                <li class="nav-item">Education</li>
+                <li class="nav-item">Skills</li>
+                <li class="nav-item">Code</li>
+            </ul>
+        </nav>
+        <aside class="left-side">
+            <img src="/img/rom.jpg" alt="Photo of Roman Doshchynskyi" class="left-side-img">
+            <h1 class="left-side-h1">Roman Doshchynskyi</h1>
+            <div class="left-side-about_me">
+                <h2 class="about_me-h2">About me</h2>
+                <p class="about_me-p">
+                    I want to learn JS and React in RS School.<br>After education i would like to work in Berlin.
+                </p>
+            </div>
+            <div class="left-side-follow_me">
+                <h2 class="follow_me-h2">Follow me</h2>
+                <ul class="follow_me-list">
+                    <a href="https://www.codewars.com/users/UaRekord">
+                        <i class="icon-code"></i>
+                        <li class="follow_me-list-item">Codewars Profile</li>
+                    </a>
+                    <a href="https://github.com/UaRekord">
+                        <i class="icon-github-circled"></i>
+                        <li class="follow_me-list-item">Github profile</li>
+                    </a>
+                    <a href="https://www.linkedin.com/in/roman-doshchynskyi-b73a1a14b/">
+                        <i class="icon-linkedin"></i>
+                        <li class="follow_me-list-item">LinkedIn profile</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="left-side-contact-me">
+                <h2 class="contacts_me-h2">Contacts</h2>
+                <i class="icon-phone"></i>
+                <ul class="contacts_me-list">
+                    <li class="contacts_me-list-item"><a href="tel:+4916096272397">+4916096272397</a></li>
+                    <li class="contacts_me-list-item"><a href="tel:+380972242061">+380972242061</a></li>
+                </ul>
+                <i class="icon-location"></i>
+                <p class="contacts_me-p">Ukraine Ankunftszentrum (UA-TXL)<br>Saatwinkler Damm Verteilzentrum, 16327, Berlin</p>
+            </div>
+        </aside>
+        <main class="main">
+            <section class="main-experience">
+                <h2 class="experience-h2"><i class="icon-briefcase"></i>Experience</h2>
+                <p class="experience-p">
+                   <a href="https://uarekord.github.io/aptekimelit/">Landing page for apoteke</a>
+                </p>
+            </section>
+            <section class="main-education">
+                <h2 class="education-h2">Education and courses</h2>
+                <ul class="education-list">
+                    <li class="education-list-item"><a href="https://freecodecamp.org/ukrainian/certification/uarekord/responsive-web-design">FreeCodeCamp Responsive Web Design</a></li>
+                    <li class="education-list-item"><a href="https://courses.prometheus.org.ua:18090/cert/bb406c395e884564846468c2c7eab08c">Basics of Web UI development 2022 (Lviv IT School)</a></li>
+                    <li class="education-list-item"><a href="https://courses.prometheus.org.ua:18090/cert/e8c7b1e14fa347e18f3f325b3681f4ec">Front-end development (Lviv IT School)</a></li>
+                </ul>
+            </section>
+            <section class="main-skills">
+                <div class="skills-language">
+                    <h2 class="skills-language-h4">Language</h2>
+                    <ul class="language-list">
+                        <li class="language-list-item">English level - A2</li>
+                        <li class="language-list-item">Russian - native</li>
+                        <li class="language-list-item">Ukraininan - good</li>
+                        <li class="language-list-item">Deutsch - A0(in process...)</li>
+                    </ul>
+                </div>
+                <div class="skills-hard">
+                    <h2 class="skills-hard-h4">Technical Skills</h2>
+                    <ul class="hard-list">
+                        <li class="hard-list-item">HTML - good</li>
+                        <li class="hard-list-item">CSS - goog</li>
+                        <li class="hard-list-item">JS - basic</li>
+                        <li class="hard-list-item">React - not yet</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="main-code">
+                <h2 class="code-h2">Code Examples</h2>
+                <!-- formatting tel number -->
+                <code class="code-item">
+                    function createPhoneNumber(numbers) {
+                        let code = "(" + numbers[0] + numbers[1] + numbers[2] + ") ";
+                        let number = `${numbers[3]}${numbers[4]}${numbers[5]}` +
+                        "-" + numbers[6] + numbers[7] + numbers[8] + numbers[9];
+                        return code + number;
+                    }
+                </code>
+                <!-- rearrange the digits to create the highest possible number -->
+                <code class="code-item">
+                    function descendingOrder(n){
+                        return parseInt(n.toString().split('').sort().reverse().join(''), 10);
+                    }
+                </code>
+            </section>
+            <footer class="footer">
+                <div class="footer-links"></div>
+                <div class="footer-links"></div>
+                <div class="footer-links"></div>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
