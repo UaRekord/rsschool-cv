@@ -10,17 +10,19 @@
 </head>
 <body>
     <div class="container">
-        <nav>
-            <ul>
-                <li class="nav-item">About me</li>
-                <li class="nav-item">Contacts</li>
-                <li class="nav-item">Experience</li>
-                <li class="nav-item">Education</li>
-                <li class="nav-item">Skills</li>
-                <li class="nav-item">Code</li>
+        <div class="navigation-button" id="nav-button">
+            <span></span>
+        </div>
+        <nav class="navigation">
+            <ul class="navigation-menu" id="menu">
+                <li class="navigation-menu-item"><a href="#about_me">About me</a></li>
+                <li class="navigation-menu-item"><a href="#contacts">Contacts</a></li>
+                <li class="navigation-menu-item"><a href="#experience">Experience</a></li>
+                <li class="navigation-menu-item"><a href="#education">Education</a></li>
+                <li class="navigation-menu-item"><a href="#skills">Skills</a></li>
             </ul>
         </nav>
-        <aside class="left-side">
+        <aside class="left-side" id="about_me">
             <img src="/img/rom.jpg" alt="Photo of Roman Doshchynskyi" class="left-side-img">
             <h1 class="left-side-h1">Roman Doshchynskyi</h1>
             <div class="left-side-about_me">
@@ -32,21 +34,30 @@
             <div class="left-side-follow_me">
                 <h2 class="follow_me-h2">Follow me</h2>
                 <ul class="follow_me-list">
-                    <a href="https://www.codewars.com/users/UaRekord">
-                        <i class="icon-code"></i>
-                        <li class="follow_me-list-item">Codewars Profile</li>
-                    </a>
-                    <a href="https://github.com/UaRekord">
-                        <i class="icon-github-circled"></i>
-                        <li class="follow_me-list-item">Github profile</li>
-                    </a>
-                    <a href="https://www.linkedin.com/in/roman-doshchynskyi-b73a1a14b/">
-                        <i class="icon-linkedin"></i>
-                        <li class="follow_me-list-item">LinkedIn profile</li>
-                    </a>
+                    <li class="follow_me-list-item">
+                        <a href="https://www.codewars.com/users/UaRekord">
+                            <div class="follow_me-item-block">
+                                <i class="icon-code"></i>Codewars Profile
+                            </div>
+                        </a>
+                    </li>
+                    <li class="follow_me-list-item">
+                        <a href="https://github.com/UaRekord">
+                            <div class="follow_me-item-block">
+                                <i class="icon-github-circled"></i>Github profile
+                            </div>
+                        </a>
+                    </li>
+                    <li class="follow_me-list-item">
+                        <a href="https://www.linkedin.com/in/roman-doshchynskyi-b73a1a14b/">
+                            <div class="follow_me-item-block">
+                                <i class="icon-linkedin"></i>LinkedIn profile
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="left-side-contact-me">
+            <div class="left-side-contact-me" id="contacts">
                 <h2 class="contacts_me-h2">Contacts</h2>
                 <i class="icon-phone"></i>
                 <ul class="contacts_me-list">
@@ -58,64 +69,70 @@
             </div>
         </aside>
         <main class="main">
-            <section class="main-experience">
+            <section class="main-experience" id="experience">
                 <h2 class="experience-h2"><i class="icon-briefcase"></i>Experience</h2>
-                <p class="experience-p">
-                   <a href="https://uarekord.github.io/aptekimelit/">Landing page for apoteke</a>
-                </p>
+                <p class="experience-p">Landing page for apoteke <a href="https://uarekord.github.io/aptekimelit/">(view site)</a></p>
             </section>
-            <section class="main-education">
-                <h2 class="education-h2">Education and courses</h2>
+            <section class="main-education" id="education">
+                <h2 class="education-h2"><i class="icon-book"></i>Education and courses</h2>
                 <ul class="education-list">
-                    <li class="education-list-item"><a href="https://freecodecamp.org/ukrainian/certification/uarekord/responsive-web-design">FreeCodeCamp Responsive Web Design</a></li>
-                    <li class="education-list-item"><a href="https://courses.prometheus.org.ua:18090/cert/bb406c395e884564846468c2c7eab08c">Basics of Web UI development 2022 (Lviv IT School)</a></li>
-                    <li class="education-list-item"><a href="https://courses.prometheus.org.ua:18090/cert/e8c7b1e14fa347e18f3f325b3681f4ec">Front-end development (Lviv IT School)</a></li>
+                    <li class="education-list-item">FreeCodeCamp Responsive Web Design <a href="https://freecodecamp.org/ukrainian/certification/uarekord/responsive-web-design">(view certificate)</a></li>
+                    <li class="education-list-item">Basics of Web UI development 2022 (Lviv IT School) <a href="https://courses.prometheus.org.ua:18090/cert/bb406c395e884564846468c2c7eab08c">(view certificate)</a></li>
+                    <li class="education-list-item">Front-end development (Lviv IT School) <a href="https://courses.prometheus.org.ua:18090/cert/e8c7b1e14fa347e18f3f325b3681f4ec">(view certificate)</a></li>
                 </ul>
             </section>
-            <section class="main-skills">
+            <section class="main-skills" id="skills">
                 <div class="skills-language">
-                    <h2 class="skills-language-h4">Language</h2>
-                    <ul class="language-list">
-                        <li class="language-list-item">English level - A2</li>
-                        <li class="language-list-item">Russian - native</li>
-                        <li class="language-list-item">Ukraininan - good</li>
-                        <li class="language-list-item">Deutsch - A0(in process...)</li>
-                    </ul>
+                    <h2 class="skills-language-h2"><i class="icon-globe"></i>Language</h2>
+                    <div class="skills-language-container">
+                        <ul class="language-list">
+                            <li class="language-list-item">English - A2</li>
+                            <li class="language-list-item">Russian - native</li>
+                        </ul>
+                        <ul class="language-list">
+                            <li class="language-list-item">Ukraininan - good</li>
+                            <li class="language-list-item">Deutsch - A0(in process...)</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="skills-hard">
-                    <h2 class="skills-hard-h4">Technical Skills</h2>
-                    <ul class="hard-list">
-                        <li class="hard-list-item">HTML - good</li>
-                        <li class="hard-list-item">CSS - goog</li>
-                        <li class="hard-list-item">JS - basic</li>
-                        <li class="hard-list-item">React - not yet</li>
-                    </ul>
+                    <h2 class="skills-hard-h2"><i class="icon-cog"></i>Technical Skills</h2>
+                    <div class="skills-hard-container">
+                        <ul class="hard-list">
+                            <li class="hard-list-item">HTML - good</li>
+                            <li class="hard-list-item">CSS - goog</li>
+                        </ul>
+                        <ul class="hard-list">
+                            <li class="hard-list-item">JS - basic</li>
+                            <li class="hard-list-item">React - not yet</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
-            <section class="main-code">
-                <h2 class="code-h2">Code Examples</h2>
-                <!-- formatting tel number -->
+            <section class="main-code" id="code">
+                <h2 class="code-h2"><i class="icon-code"></i>Code Examples</h2>
                 <code class="code-item">
-                    function createPhoneNumber(numbers) {
-                        let code = "(" + numbers[0] + numbers[1] + numbers[2] + ") ";
-                        let number = `${numbers[3]}${numbers[4]}${numbers[5]}` +
-                        "-" + numbers[6] + numbers[7] + numbers[8] + numbers[9];
-                        return code + number;
-                    }
+    function createPhoneNumber(numbers) {
+        let code = "(" + numbers[0] + numbers[1] + numbers[2] + ") ";
+        let number = `${numbers[3]}${numbers[4]}${numbers[5]}` +
+        "-" + numbers[6] + numbers[7] + numbers[8] + numbers[9];
+        return code + number;
+    }
                 </code>
                 <!-- rearrange the digits to create the highest possible number -->
                 <code class="code-item">
-                    function descendingOrder(n){
-                        return parseInt(n.toString().split('').sort().reverse().join(''), 10);
-                    }
+    function descendingOrder(n){
+        return parseInt(n.toString().split('').sort().reverse().join(''), 10);
+    }
                 </code>
             </section>
-            <footer class="footer">
-                <div class="footer-links"></div>
-                <div class="footer-links"></div>
-                <div class="footer-links"></div>
-            </footer>
         </main>
     </div>
+    <footer class="footer">
+        <div class="footer-links"><img class="footer-img-logo_rs_school" src="/img/rs_school_js.svg" alt=""></div>
+        <div class="footer-links"><a href="https://rs.school/js/"><i class="icon-book"></i>My Course</a></div>
+        <div class="footer-links"><a href="https://github.com/UaRekord"><i class="icon-github-circled"></i>My Github</a></div>
+    </footer>
 </body>
+<script src="/js/script.js"></script>
 </html>
